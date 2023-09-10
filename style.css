@@ -1,0 +1,61 @@
+*{
+    margin:  0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('weatherbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: fit-content;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+form input{
+    height: 30px;
+    width: 400px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    color: white;
+}
+form button{
+    width: 150px;
+}
+.heading{
+    color: aliceblue;
+}
+.main_div{
+    visibility: hidden;
+    width: 400px;
+
+}
+
+.serchbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.serchbar input{
+    width: 400px;
+    color: white;
+}
+/* loading circle */
+.custom-loader {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#766DF4;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 70deg,#0000 71deg 90deg),
+      radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 calc(100% - 8px));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation:s5 1s infinite ;
+  }
+  @keyframes s5 {to{transform: rotate(.5turn)}}
